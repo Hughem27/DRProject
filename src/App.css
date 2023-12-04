@@ -28,6 +28,13 @@
   color: #61dafb;
 }
 
+.marksBtn{
+  margin: 5px;
+  color:beige;
+  background-color: #282c34;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
