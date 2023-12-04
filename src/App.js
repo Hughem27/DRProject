@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
+import './App.css';
 import DisplayCart from './Components/DisplayCart';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Footer from './Components/Footer';
@@ -16,12 +17,13 @@ const App = () => {
 
       <BrowserRouter>
 
-        <Header></Header>
+        {/* <Header></Header> */}
         <div>
           {/* Navbar from bootstrap */}
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
               <div className="container px-4 px-lg-5">
-                <a className="navbar-brand" href="home">DataRep</a>              
+                <a className="navbar-brand
+                " href="home">DataRep</a>              
                 
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -50,9 +52,7 @@ const App = () => {
               <Route path='/home' element={<Home></Home>}></Route>
               <Route path='/shop' element={<DisplayCart></DisplayCart>}></Route>
               <Route path='/about' element={<About></About>}></Route>
-              <Route path='/cart' element={<DisplayCart></DisplayCart>}></Route>
-              {/* <Route path='/product' element={<ProductDetails></ProductDetails>}></Route> */}
-              {/* <Route path="/cart" element={<Cart1 cartItems={cartItems} />} /> */}
+              <Route path='/cart' element={<DisplayCart></DisplayCart>}></Route>              
             </Routes>
         </div>
 

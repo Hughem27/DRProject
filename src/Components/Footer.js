@@ -1,9 +1,16 @@
+import 'bootstrap/dist/css/bootstrap.css';
+
 function Footer() {
 
 
     return (
-        <div>
-            <h1>Footer</h1>
+        <div className="footer">
+            <div>
+                <p className="footer">&copy;Atlantic Technological University Galway </p>
+            </div>
+            <div>
+                <p> Data Representation & Querying Project 2023</p>
+            </div>
         </div>
     );
 };
