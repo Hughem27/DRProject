@@ -7,9 +7,12 @@ import Footer from './Components/Footer';
 import Header from './Components/Header';
 import About from './Components/About';
 import Home from './Components/Home';
+import CreateProduct from './Components/CreateProduct';
+import EditProduct from './Components/EditProduct'
+import ProductItems from './Components/ProductItems';
 
 
-const App = () => {
+const App = (props) => {
 
 
   return (
@@ -31,6 +34,8 @@ const App = () => {
                     <li className="nav-item"><a className="nav-link active" aria-current="page" href="home">Home</a></li>
                     <li className="nav-item"><a className="nav-link" href="shop">Shop</a></li>
                     <li className="nav-item"><a className="nav-link" href="about">About</a></li>
+                    <li className="nav-item"><a className="nav-link" href="create">Create</a></li>
+                    <li className="nav-item"><a className="nav-link" href="edit">Edit</a></li>
                     
 
                   </ul>                  
@@ -53,9 +58,11 @@ const App = () => {
               <Route path='/shop' element={<DisplayCart></DisplayCart>}></Route>
               <Route path='/about' element={<About></About>}></Route>
               <Route path='/cart' element={<DisplayCart></DisplayCart>}></Route>              
+              <Route path='/create' element={<CreateProduct></CreateProduct>}></Route>              
+              <Route path='/edit' element={<EditProduct></EditProduct>}></Route>              
             </Routes>
         </div>
-
+        {/* <ProductItems product={props} /> */}
         <Footer></Footer>
       </BrowserRouter>
     </div>

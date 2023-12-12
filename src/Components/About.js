@@ -10,28 +10,16 @@ function About() {
                             <div className="row h-100 align-items-center py-5">
                                 <div className="col-lg-6">
                                     <h1 className="display-4">About us</h1>
-                                    <p className="lead text-muted mb-0">SportsTape.ie is a new company based in Hi-Tech House,
-                                        Claregalway Corporate Park, Claregalway, Galway.
-                                        Currently we are supplying premium zinc oxide and
-                                        tearable EAB tape to sports clubs, physiotherapists, sports
-                                        therapists, athletic therapists and pharmacies throughout
+                                    <p className="lead text-muted mb-0">MarkHughesDataRepProject is a new 
+                                        company based in Atlantic Technological University, Galway.
+                                        Currently we are supplying some things and
+                                        some other stuff to some people and companies throughout
                                         Ireland. </p>
                                     <p className="lead text-muted"> <a href="//" className="text-muted">
                                         <u></u></a>
                                     </p>
                                 </div>
-                                {/* <img src={logo1} alt="" className="img-fluid mb-4 mb-lg-0" /> */}
-
-                                {/* Google Map API for location */}
-                                {/* <iframe
-                                    width="600"
-                                    height="450"
-                                    //style="border:0"
-                                    loading="lazy"
-                                    allowfullscreen
-                                    referrerpolicy="no-referrer-when-downgrade"
-                                    src="https://www.google.com/maps/embed/v1/place?key=API_KEY&q=Space+Needle,Seattle+WA">
-                                </iframe> */}
+                                
                             </div>
                         </div>
                     </div>

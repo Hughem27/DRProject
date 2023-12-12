@@ -48,7 +48,13 @@
   width: 100%;
 }
 
-
+.shop{
+  outline-style: outset;
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
 
 @keyframes App-logo-spin {
   from {
