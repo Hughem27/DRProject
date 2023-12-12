@@ -32,6 +32,10 @@ async function main() {
   // use `await mongoo
 }
 
+app.get('./', (req, res) => {
+  res.redirect('./home')
+});
+
 // Endpoint to get all products
 app.get('/products', async (req, res) => {
   try {

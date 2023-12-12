@@ -11,7 +11,7 @@
 //     { id: 2, name: 'Bread', price: 2.50 },
 //     { id: 3, name: 'Bagel', price: 2 },
 //     { id: 4, name: 'Banana', price: 3 },
-    
+
 //   ]);
 
 //   //    Add to cart
@@ -66,8 +66,9 @@
 
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Link } from "react-router-dom";
 
-const DisplayCart = () => {
+const DisplayCart = (props) => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -95,10 +96,8 @@ const DisplayCart = () => {
           <p>Product Name: {product.name}</p>
           <p>{product.description}</p>
           <p>Price: €{product.price}</p>
-          {/* <p>Product ID: {product.id}</p> */}
           <p>Product ID: {product._id}</p>
-          <button onClick={console.log("Clicked Dat bitch")} >Add To cart</button>
-          
+          <button onClick={() => console.log("Clicked product", product._id)} >Add To cart</button>
           {/* other product details */}
         </div>
       ))}

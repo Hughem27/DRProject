@@ -14,7 +14,7 @@ import axios from 'axios';
 
     useEffect(() => {
         // Fetch the product details to edit
-        axios.get(`http://localhost:4000/products/${id}`)
+        axios.get(`http://localhost:4000/products/` + id)
             .then((response) => {
                 setName(response.data.name);
                 setPrice(response.data.price);
@@ -35,7 +35,7 @@ import axios from 'axios';
         };
 
         // Update the product info
-        axios.put(`http://localhost:4000/products/${id}`, updatedProduct)
+        axios.put(`http://localhost:4000/products/`+ id, updatedProduct)
             .then((res) => {
                 console.log(res.data);
                 navigate('/products'); // Change this to the appropriate route after editing

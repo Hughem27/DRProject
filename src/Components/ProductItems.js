@@ -7,8 +7,10 @@ import axios from 'axios';
 function ProductItems(props) {
     return (
         <div>
-            Price: ${props.product.price}
-            <Link to={`/edit/${props.product._id}`} style={{ margin: '5px' }} className='myButtons'>Edit</Link>
+            
+            {/* <Link to={'/edit/'+props.myBook._id} */}
+            {/* <Link to={'/edit/'props.product._id }>Edit</Link> */}
+            <Link to={'/edit/'+props.product._id} style={{margin:'5px'}} > Edit </Link>
             <button className='myButtons'
                 onClick={() => {
                     axios.delete(`http://localhost:4000/products/${props.product._id}`)
@@ -18,6 +20,7 @@ function ProductItems(props) {
 
                 }>Delete</button>
             <p>Price: ${props.product.price}</p>
+            
 
             
         </div>
